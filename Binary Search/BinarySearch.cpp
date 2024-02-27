@@ -1,6 +1,11 @@
+/**
+ * Binary Search Algorithm
+ * Author: Sujan Maji
+ * Date: 27/02/2024
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
-
 
 int binarySearch(int arr[], int size, int key)
 {
