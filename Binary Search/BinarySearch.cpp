@@ -34,9 +34,9 @@ int binarySearch(int arr[], int size, int key)
 
 int main()
 {
-    int size = 5;
-    int nums[size] = {1, 2, 3, 4, 5};
-    int key = 4;
+    int nums[] = {1, 2, 3, 4, 5};
+    int size = sizeof(nums)/sizeof(nums[0]);
+    int key = 2;
 
     int searchIndex = binarySearch(nums, size, key);
 
