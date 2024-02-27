@@ -9,12 +9,12 @@ using namespace std;
 
 int binarySearch(int arr[], int size, int key)
 {
-    int l = 0;
-    int r = size - 1;
+    int left = 0;
+    int right = size - 1;
 
-    while (l <= r)
+    while (left <= right)
     {
-        int mid = l + (r - l) / 2;
+        int mid = left + (right - left) / 2;
 
         if (arr[mid] == key)
         {
@@ -22,11 +22,11 @@ int binarySearch(int arr[], int size, int key)
         }
         else if (arr[mid] > key)
         {
-            r = mid - 1;
+            right = mid - 1;
         }
         else
         {
-            r = mid - 1;
+            left = mid + 1;
         }
     }
     return -1;
@@ -36,12 +36,10 @@ int main()
 {
     int size = 5;
     int nums[size] = {1, 2, 3, 4, 5};
-    int key = 3;
+    int key = 4;
 
     int searchIndex = binarySearch(nums, size, key);
 
-    searchIndex >= 0
-        ? cout << key << " found at index " << searchIndex << endl
-        : cout << key << " not found" << endl;
+    cout << searchIndex << endl;
     return 0;
 }
