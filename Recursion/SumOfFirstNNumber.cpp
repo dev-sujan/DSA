@@ -12,7 +12,7 @@ int main()
 {
     int n = 10;
 
-    cout << sumOfFirstNNumber(n)<<endl;
+    cout << sumOfFirstNNumber(n) << endl;
 
     return 0;
 }
