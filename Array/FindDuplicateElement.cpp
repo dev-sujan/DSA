@@ -9,12 +9,16 @@ int findDuplicate(vector<int> &nums)
 
     for (auto &i : nums)
     {
+        cout << "i : " << i << endl;
         int id = abs(i) - 1;
+        cout << "id:  " << id << endl;
         if (nums[id] < 0)
         {
             return abs(i);
         }
+        cout << nums[id] << endl;
         nums[id] = -nums[id];
+        cout << nums[id] << endl;
     }
     return -1;
 }
